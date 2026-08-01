@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdullah AlFraih — Junior Data Analyst portfolio">
+  <meta name="theme-color" content="#07111f">
+  <title>Abdullah AlFraih | Junior Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Home"><span>AA</span><strong data-name>Abdullah AlFraih</strong></a>
+    <nav id="nav" aria-label="Main navigation"></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+      <button class="lang-button" id="lang-toggle" type="button" aria-label="Switch language">عربي</button>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero-lead" id="hero-summary"></p>
+        <div class="hero-actions" id="hero-actions"></div>
+        <div class="hero-contact" id="hero-contact"></div>
+        <div class="availability"><span></span><p id="availability-text"></p></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Analytics profile overview">
+        <div class="profile-card glass">
+          <div class="profile-top"><div class="monogram">AA</div><div><p data-name></p><span id="profile-role"></span></div></div>
+          <div class="mini-chart" aria-hidden="true"><i style="height:76%"></i><i style="height:94%"></i><i style="height:56%"></i><i style="height:38%"></i><i style="height:48%"></i></div>
+          <div class="profile-tags" id="profile-tags"></div>
+        </div>
+        <div class="floating-note glass"><span>↗</span><p id="insight-label"></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="about"><div class="section-heading reveal"><p class="section-index">01</p><div><p class="eyebrow" data-section-label="about"></p><h2 id="about-heading"></h2></div></div><div class="about-grid"><p class="about-copy reveal" id="about-copy"></p><div class="facts-grid reveal" id="facts-grid"></div></div></section>
+    <section class="section" id="skills"><div class="section-heading reveal"><p class="section-index">02</p><div><p class="eyebrow" data-section-label="skills"></p><h2 id="skills-heading"></h2></div></div><div class="skills-grid" id="skills-grid"></div></section>
+    <section class="section" id="experience"><div class="section-heading reveal"><p class="section-index">03</p><div><p class="eyebrow" data-section-label="experience"></p><h2 id="experience-heading"></h2></div></div><div class="timeline" id="experience-list"></div></section>
+    <section class="section" id="education"><div class="section-heading reveal"><p class="section-index">04</p><div><p class="eyebrow" data-section-label="education"></p><h2 id="education-heading"></h2></div></div><div id="education-list"></div></section>
+    <section class="section" id="projects"><div class="section-heading reveal"><p class="section-index">05</p><div><p class="eyebrow" data-section-label="projects"></p><h2 id="projects-heading"></h2></div></div><div class="project-grid" id="projects-list"></div></section>
+    <section class="section" id="certificates"><div class="section-heading reveal"><p class="section-index">06</p><div><p class="eyebrow" data-section-label="certificates"></p><h2 id="certificates-heading"></h2></div></div><div class="certificate-grid" id="certificates-list"></div></section>
+    <section class="section resume-section" id="resume"><div class="resume-panel glass reveal"><div><p class="eyebrow" data-section-label="resume"></p><h2 id="resume-heading"></h2><p id="resume-copy"></p></div><a class="button primary" id="resume-link" href="resume.html"></a></div></section>
+    <section class="section contact-section" id="contact"><div class="contact-card reveal"><p class="eyebrow" data-section-label="contact"></p><h2 id="contact-heading"></h2><p id="contact-copy"></p><div class="contact-links" id="contact-links"></div></div></section>
+  </main>
+  <footer><p id="footer-copy"></p><button type="button" id="back-top"></button></footer>
+</body>
+</html>
