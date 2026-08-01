@@ -1,10 +1,10 @@
 # Abdullah AlFraih — Data Analyst Portfolio
 
-A bilingual, responsive portfolio prepared for GitHub Pages. It works without any build tools.
+A bilingual, responsive portfolio prepared for GitHub Pages. This flat-file edition is designed for easy browser upload and works without any build tools.
 
 ## Preview
 
-Open `index.html` in a browser. Keep the folder structure unchanged.
+Open `index.html` in a browser. Keep all six files together in the repository root.
 
 ## Edit all content from one file
 
