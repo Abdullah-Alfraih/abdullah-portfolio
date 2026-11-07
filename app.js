@@ -1,7 +1,6 @@
 (() => {
   const D = window.PORTFOLIO_DATA;
-  const savedLang = localStorage.getItem("portfolio-language");
-  let lang = savedLang || (navigator.language.startsWith("ar") ? "ar" : "en");
+  const lang = "en";
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => [...document.querySelectorAll(s)];
   const t = (obj) => obj?.[lang] ?? obj ?? "";
@@ -34,11 +33,9 @@
     $("#contact-copy").textContent=L.contactCopy;
     const contacts=[]; if(D.email) contacts.push(`<span><strong>Email</strong>${D.email}</span>`); if(D.phone) contacts.push(`<span><strong>${lang==='ar'?'الهاتف':'Phone'}</strong>${D.phone}</span>`); if(D.linkedin) contacts.push(`<a href="${D.linkedin}" target="_blank" rel="noopener">LinkedIn ↗</a>`); if(D.github) contacts.push(`<a href="${D.github}" target="_blank" rel="noopener">GitHub ↗</a>`);
     $("#contact-links").innerHTML=contacts.join(""); $("#footer-copy").textContent=`© ${new Date().getFullYear()} ${t(D.name)}. ${L.footer}`; $("#back-top").textContent=L.buttons.top+" ↑";
-    $("#lang-toggle").textContent=lang==="en"?"عربي":"EN";
     observe();
   }
   function observe(){ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12}); $$(".reveal").forEach(x=>io.observe(x)); }
-  $("#lang-toggle").addEventListener("click",()=>{lang=lang==="en"?"ar":"en"; localStorage.setItem("portfolio-language",lang); render();});
   const preferred=localStorage.getItem("portfolio-theme-v2")||"dark"; document.documentElement.dataset.theme=preferred;
   $("#theme-toggle").addEventListener("click",()=>{const n=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=n;localStorage.setItem("portfolio-theme-v2",n);});
   $("#menu-toggle").addEventListener("click",()=>{const open=$("#nav").classList.toggle("open");$("#menu-toggle").setAttribute("aria-expanded",open)}); $("#nav").addEventListener("click",()=>$("#nav").classList.remove("open"));
