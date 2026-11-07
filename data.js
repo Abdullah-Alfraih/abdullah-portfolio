@@ -7,7 +7,7 @@ window.PORTFOLIO_DATA = {
   phone:"+966565529163",
   linkedin:"https://www.linkedin.com/in/abdullah-alfraih-58a8a0404/",
   github:"https://github.com/Abdullah-Alfraih",
-  resume:"resume.html",
+  resume:"resume.html?v=6",
   hero:{
     en:{eyebrow:"MIS GRADUATE · HR OPERATIONS · DATA ANALYTICS",title:"Building reliable data workflows and useful reports.",summary:"I work in HR coordination, develop practical tracking systems, and use Excel and Power BI to improve operational reporting."},
     ar:{eyebrow:"خريج نظم معلومات إدارية · عمليات الموارد البشرية · تحليل البيانات",title:"أبني مسارات عمل موثوقة للبيانات وتقارير مفيدة.",summary:"أعمل في تنسيق الموارد البشرية، وأطور أنظمة متابعة عملية، وأستخدم Excel وPower BI لتحسين التقارير التشغيلية."}
@@ -55,4 +55,5 @@ window.PORTFOLIO_DATA = {
     {title:{en:"Google Data Analytics Professional Certificate",ar:"شهادة Google Data Analytics Professional Certificate"},issuer:{en:"In progress - not yet earned",ar:"قيد الدراسة - لم تصدر الشهادة بعد"},year:"",link:""}
   ]
 };
+
 
